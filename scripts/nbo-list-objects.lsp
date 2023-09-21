@@ -16,7 +16,7 @@
 
   (setq $Cntr -1)
   (setq $Pnt0 (trans (getpoint "\nBase point") 1 0))
-  (WTN:TEXTSTYLE "Pols-013" "Arial.ttf")
+  (WTN:TEXTSTYLE "NLCS-ISO" "NLCS-ISO.ttf")
   (while 
     (and 
       (setq $Layer (tblnext "LAYER" (null $Layer)))
@@ -58,7 +58,7 @@
 
   (setq $Cntr -1)
   (setq $Pnt0 (trans (getpoint "\nBase point") 1 0))
-  (WTN:TEXTSTYLE "Pols-013" "Arial.ttf")
+  (WTN:TEXTSTYLE "NLCS-ISO" "NLCS-ISO.ttf")
   (while 
     (and 
       (setq $Block (tblnext "BLOCK" (null $Block)))
@@ -95,7 +95,7 @@
     (list 
       (cons 0 "TEXT")
       (cons 1 $LayerName)
-      (cons 7 "Pols-013")
+      (cons 7 "NLCS-ISO")
       (cons 8 $LayerName)
       (cons 10 $Pnt2)
       (cons 11 $Pnt2)
@@ -128,7 +128,7 @@
     (list 
       (cons 0 "TEXT")
       (cons 1 $SymbolName)
-      (cons 7 "Pols-013")
+      (cons 7 "NLCS-ISO")
       (cons 8 "0")
       (cons 10 $Pnt1)
       (cons 11 $Pnt1)
